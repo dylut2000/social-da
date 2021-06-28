@@ -1,0 +1,58 @@
+// @include displayflex(row, space-between, center);
+// background-color: darken($background-color, 10%);
+// height: get-size(100vh, 4rem);
+
+@import "../../mixins";
+
+.sidebar {
+  height: 100%;
+  @include displayflex(column, space-between, flex-start);
+
+  &__top {
+    width: 100%;
+    height: auto;
+
+    .sidebar__list {
+      @include displayflex(column, flex-start, flex-start);
+
+
+      div {
+        @include displayflex(row, flex-start, center);
+        gap: 1rem;
+        padding: 1.5rem;
+        font-weight: 700;
+        border-bottom: solid 1px rgb(235, 235, 235);
+        width: 100%;
+
+
+        &:hover {
+            cursor: pointer;
+            width: 100%;
+            color: var(--white);
+            background-color: var(--lightBlue);
+        }
+
+
+      }
+
+    }
+  }
+
+  &__bottom {
+    flex: 1;
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        color: gray;
+        padding: .5rem 1rem;
+    }
+  }
+}

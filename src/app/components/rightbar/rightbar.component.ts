@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-rightbar',
+  selector: 'Rightbar',
   templateUrl: './rightbar.component.html',
   styleUrls: ['./rightbar.component.scss']
 })

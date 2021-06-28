@@ -1,12 +1,10 @@
-// @include displayflex(row, space-between, center);
-// background-color: darken($background-color, 10%);
-// height: get-size(100vh, 4rem);
+
 
 @import "../../mixins";
 
 .topbar {
-    position: fixed;
-    top: 0;
+  position: fixed;
+  top: 0;
   height: 4rem;
   width: 100%;
   background-color: var(--blue);

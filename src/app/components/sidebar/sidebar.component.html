@@ -1,1 +1,21 @@
-<p>sidebar works!</p>
+<div class="sidebar">
+  <div class="sidebar__top">
+    <div class="sidebar__list">
+        <div *ngFor="let item of [1,2,3,4, 1,]">
+         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-app-indicator" viewBox="0 0 16 16">
+             <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"/>
+             <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+           </svg>
+           <span>Home</span>
+        </div>
+    </div>
+  </div>
+  <div class="sidebar__bottom">
+      <img src="https://www.cybersecurity-insiders.com/wp-content/uploads/2017/07/Team.png" alt="">
+    <div *ngFor="let item of [1,2,3]">
+        <img src="https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70"
+        alt="" style="width: 2rem; height: 2rem; border-radius: 50%;">
+          <span>Academy teams</span>
+       </div>
+  </div>
+</div>

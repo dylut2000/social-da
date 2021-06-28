@@ -1,0 +1,32 @@
+// @include displayflex(row, space-between, center);
+// background-color: darken($background-color, 10%);
+// height: get-size(100vh, 4rem);
+
+@import "../../mixins";
+
+.home {
+  width: 100%;
+  @include displayflex(row, space-between, center);
+
+  &__sidebar {
+    flex: 3;
+    margin-top: 4rem;
+    height: get-size(100vh, 4rem);
+    overflow-y: scroll;
+  }
+
+  &__mainbar {
+    flex: 5;
+    margin-top: 4rem;
+    height: get-size(100vh, 4rem);
+    overflow-y: scroll;
+    background-color: var(--white);
+  }
+
+  &__rightbar {
+    flex: 3;
+    margin-top: 4rem;
+    height: get-size(100vh, 4rem);
+    overflow-y: scroll;
+  }
+}
